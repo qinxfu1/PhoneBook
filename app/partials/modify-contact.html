@@ -1,0 +1,44 @@
+<form name="reviewForm"  class="form-horizontal" ng-submit="modifyContactCtrl.saveModifiedContact()">
+
+
+  <div class="input-container">
+    <fieldset class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name:</label>
+    <span class="col-sm-9">
+      <input type="text" class="form-control" id="name" ng-model="modifyContactCtrl.contact.name"
+      value="{{modifyContactCtrl.contact.name}}">
+    </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label for="phone" class="control-label col-sm-2">Phone:</label>
+    <span class="col-sm-9">
+      <input type="text" id="phone" class="form-control" ng-model="modifyContactCtrl.contact.phone" value="{{modifyContactCtrl.contact.phone}}">
+    </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label class="control-label col-sm-2" for="email">Email</label>
+    <span class="col-sm-9">
+      <input type="email" id="email" name="email" class="form-control" ng-model="modifyContactCtrl.contact.email"
+      value="{{modifyContactCtrl.contact.email}}"></span>
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label class="control-label col-sm-2" for="birthday">Birthday</label>
+    <span class="col-sm-9">
+      <input type="text" id="birthday" class="form-control" ng-model="modifyContactCtrl.contact.birthday"
+      value="{{modifyContactCtrl.contact.birthday}}"></span>
+    </fieldset>
+
+
+    <fieldset class="form-group">
+      <span class="col-sm-9 col-sm-offset-2 button-from-hell">
+        <button type="submit" class="btn btn-primary" aria-label="Left Align">
+          Save
+        </button>
+      </span>
+    </fieldset>
+  </div>
+
+</form>

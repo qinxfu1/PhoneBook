@@ -1,0 +1,18 @@
+
+
+<div class="row" ng-controller="ravensCtrl">
+
+<create-new ng-show="ravensCtrl.showForm" contacts="ravensCtrl.contacts"></create-new>
+  <hr />
+  <ul class="list-unstyled col-md-8">
+    <li data-ng-repeat="contact in contacts">
+      <aside class="col-sm-2" >
+          <img ng-src="http://lorempixel.com/300/300/people/{{contact.id}}" alt="Picture" class="img-responsive">
+        </a>
+      </aside>
+      <contact-content contacts="ravensCtrl.contacts"></contact-content>
+
+
+    </li>
+  </ul>
+</div>

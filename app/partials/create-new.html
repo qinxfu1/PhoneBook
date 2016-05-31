@@ -1,0 +1,44 @@
+<form name="reviewForm"  class="form-horizontal" ng-submit="reviewFormCtrl.addContact(reviewFormCtrl.contact)">
+
+
+  <div class="input-container">
+    <fieldset class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name:</label>
+    <span class="col-sm-9">
+      <input type="text" class="form-control" id="name" ng-model="reviewFormCtrl.contact.name"
+      value="{{reviewFormCtrl.contact.name}}">
+    </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label for="phone" class="control-label col-sm-2">Phone:</label>
+    <span class="col-sm-9">
+      <input type="text" id="phone" class="form-control" ng-model="reviewFormCtrl.contact.phone" value="{{reviewFormCtrl.contact.phone}}">
+    </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label class="control-label col-sm-2" for="email">Email</label>
+    <span class="col-sm-9">
+      <input type="email" id="email" class="form-control" ng-model="reviewFormCtrl.contact.email"
+      value="{{reviewFormCtrl.contact.email}}"></span>
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label class="control-label col-sm-2" for="birthday">Birthday</label>
+    <span class="col-sm-9">
+      <input type="text" id="birthday" class="form-control" ng-model="reviewFormCtrl.contact.birthday"
+      value="{{reviewFormCtrl.contact.birthday}}"></span>
+    </fieldset>
+
+
+    <fieldset class="form-group">
+      <span class="col-sm-9 col-sm-offset-2 button-from-hell">
+        <button type="submit" class="btn btn-primary" aria-label="Left Align">
+          Save
+        </button>
+      </span>
+    </fieldset>
+  </div>
+
+</form>
